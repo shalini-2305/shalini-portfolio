@@ -4,7 +4,7 @@ import { Mail, MapPin, Linkedin, Github } from "lucide-react"
 
 const Section5 = () => {
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#18181b" }}>
+    <div id="contact" className="py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#18181b" }}>
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: "#fafafa" }}>
@@ -193,8 +193,8 @@ const Section5 = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
 
 export default Section5;

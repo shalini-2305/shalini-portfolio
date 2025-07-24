@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark" style={{ scrollBehavior: 'smooth' }}>
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );

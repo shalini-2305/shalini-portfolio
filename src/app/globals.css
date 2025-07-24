@@ -18,6 +18,11 @@
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
   }
+
+  /* Add smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @layer base {

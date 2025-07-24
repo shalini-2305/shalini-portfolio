@@ -3,6 +3,17 @@
 import { Download, Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
+  // Smooth scroll function for buttons
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <div
       id="home"
@@ -24,7 +35,10 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-fade-in-up delay-400">
-          <button className="px-6 py-3 rounded-lg shadow-lg hover:opacity-90 transition-opacity flex items-center bg-[#fafafa] text-[#18181b]">
+          <button
+            className="px-6 py-3 rounded-lg shadow-lg hover:opacity-90 transition-opacity flex items-center bg-[#fafafa] text-[#18181b]"
+            onClick={() => scrollToSection('contact')}
+          >
             <Mail className="mr-2 h-4 w-4" />
             Get In Touch
           </button>
@@ -36,22 +50,26 @@ const Hero = () => {
 
         <div className="flex justify-center space-x-6 animate-fade-in-up delay-500">
           <a
-            href="#"
-            className="text-[#fafafa] transition-all duration-200 transform hover:scale-110 hover:opacity-80"
+            href="https://github.com/your-username"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#fafafa] transition-all duration-200 transform hover:scale-110 hover:opacity-80 no-underline"
             aria-label="GitHub"
           >
             <Github size={24} />
           </a>
           <a
-            href="#"
-            className="text-[#fafafa] transition-all duration-200 transform hover:scale-110 hover:opacity-80"
+            href="https://linkedin.com/in/your-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#fafafa] transition-all duration-200 transform hover:scale-110 hover:opacity-80 no-underline"
             aria-label="LinkedIn"
           >
             <Linkedin size={24} />
           </a>
           <a
-            href="#"
-            className="text-[#fafafa] transition-all duration-200 transform hover:scale-110 hover:opacity-80"
+            href="mailto:your-email@example.com"
+            className="text-[#fafafa] transition-all duration-200 transform hover:scale-110 hover:opacity-80 no-underline"
             aria-label="Email"
           >
             <Mail size={24} />
