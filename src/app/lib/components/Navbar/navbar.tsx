@@ -34,6 +34,22 @@ const Navbar = () => {
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
+
+          {/* Mobile Navigation */}
+          {isMenuOpen && (
+          <div className="md:hidden py-4 border-t border-[rgba(250, 250, 250, 0.1)]">
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="block py-2 transition-opacity duration-200 hover:opacity-80 text-[#fafafa]"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     </header>
   );
