@@ -1,0 +1,188 @@
+'use client';
+
+import { Building, Calendar, MapPin } from 'lucide-react';
+
+const Section4 = () => {
+  const experiences = [
+    {
+      title: 'Fullstack Developer',
+      company: 'Ascodelabs',
+      period: 'Current Position',
+      location: 'Chennai',
+      responsibilities: [
+        'Develop and maintain full-stack web applications using React, Next.js, and Python.',
+        'Design and implement responsive user interfaces with Tailwind CSS.',
+        'Build and optimize backend APIs and database systems.',
+        'Manage domain setup, deployment, and DevOps processes.',
+        'Implement automation workflows using n8n for improved efficiency.',
+        'Collaborate with team members on project architecture and code reviews.',
+      ],
+      achievements: [
+        'Successfully deployed multiple production applications.',
+        'Improved application performance and user experience.',
+        'Streamlined deployment processes through automation.',
+      ],
+    },
+  ];
+
+  const additionalSkills = [
+    'Domain Management & DNS Configuration',
+    'Application Deployment & Hosting',
+    'Workflow Automation with n8n',
+    'Database Design & Optimization',
+    'API Development & Integration',
+    'Responsive Web Design',
+    'Version Control with Git',
+    'Agile Development Methodologies',
+    'Proficient in Cloud',
+    'Proficient in Cursor',
+    'Proficient in ChatGPT',
+    'Proficient in v0',
+  ];
+
+  return (
+    <section
+      id="experience"
+      className="py-16 px-4 sm:px-6 lg:px-8"
+      style={{ backgroundColor: '#18181b' }}
+    >
+      <div className="container mx-auto max-w-6xl">
+        <div className="text-center mb-12">
+          <h2
+            className="text-3xl sm:text-4xl font-bold mb-4"
+            style={{ color: '#fafafa' }}
+          >
+            Professional Experience
+          </h2>
+          <p
+            className="text-lg max-w-2xl mx-auto"
+            style={{ color: '#fafafa', opacity: 0.8 }}
+          >
+            Building innovative solutions and contributing to impactful projects
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:col-span-2">
+            {experiences.map((exp, index) => (
+              <div
+                key={index}
+                className="mb-6 border shadow-lg"
+                style={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                  borderColor: 'rgba(255, 255, 255, 0.25)',
+                  backdropFilter: 'blur(10px)',
+                }}
+              >
+                <div className="p-6">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                    <div>
+                      <h3
+                        className="text-xl font-semibold mb-1"
+                        style={{ color: '#fafafa' }}
+                      >
+                        {exp.title}
+                      </h3>
+                      <div
+                        className="flex items-center mb-2"
+                        style={{ color: '#fafafa' }}
+                      >
+                        <Building className="h-4 w-4 mr-2" />
+                        {exp.company}
+                      </div>
+                    </div>
+                    <div
+                      className="flex flex-col sm:items-end text-sm"
+                      style={{ color: '#fafafa', opacity: 0.8 }}
+                    >
+                      <div className="flex items-center mb-1">
+                        <Calendar className="h-4 w-4 mr-2" />
+                        {exp.period}
+                      </div>
+                      <div className="flex items-center">
+                        <MapPin className="h-4 w-4 mr-2" />
+                        {exp.location}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mb-4">
+                    <h4
+                      className="font-medium mb-2"
+                      style={{ color: '#fafafa' }}
+                    >
+                      Key Responsibilities:
+                    </h4>
+                    <ul
+                      className="list-disc list-inside space-y-1 text-sm"
+                      style={{ color: '#fafafa', opacity: 0.8 }}
+                    >
+                      {exp.responsibilities.map((resp, respIndex) => (
+                        <li key={respIndex}>{resp}</li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4
+                      className="font-medium mb-2"
+                      style={{ color: '#fafafa' }}
+                    >
+                      Key Achievements:
+                    </h4>
+                    <ul
+                      className="list-disc list-inside space-y-1 text-sm"
+                      style={{ color: '#fafafa', opacity: 0.8 }}
+                    >
+                      {exp.achievements.map((achievement, achIndex) => (
+                        <li key={achIndex}>{achievement}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div>
+            <div
+              className="border shadow-lg"
+              style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                borderColor: 'rgba(255, 255, 255, 0.25)',
+                backdropFilter: 'blur(10px)',
+              }}
+            >
+              <div className="p-6">
+                <h3
+                  className="text-lg font-semibold mb-4"
+                  style={{ color: '#fafafa' }}
+                >
+                  Additional Expertise
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {additionalSkills.map((skill, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center p-3 rounded-lg transition-all duration-200 hover:scale-[1.03]"
+                      style={{
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                        color: '#fafafa',
+                        border: '1px solid rgba(255, 255, 255, 0.15)',
+                      }}
+                    >
+                      <div className="w-2 h-2 rounded-full mr-3 bg-[#fafafa]"></div>
+                      <span className="text-sm">{skill}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Section4;
