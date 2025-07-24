@@ -6,6 +6,7 @@ import Section2 from "./lib/components/Section2/section2";
 import Section3 from "./lib/components/Section3/section3";
 import Section4 from "./lib/components/Section4/section4";
 import Section5 from "./lib/components/Section5/section5";
+import Footer from "./lib/components/Footer/footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Section3/>
       <Section4/>
       <Section5/>
+      <Footer/>
     </div>
   );
 }
