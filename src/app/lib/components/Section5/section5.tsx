@@ -13,7 +13,7 @@ const Section5 = () => {
         <div className="text-center mb-12">
           <h2
             className="text-3xl sm:text-4xl font-bold mb-4"
-            style={{ color: '#FF5F15' }}
+            style={{ color: 'var(--accent-color)' }}
           >
             Let's Work Together
           </h2>
@@ -216,7 +216,11 @@ const Section5 = () => {
                 <button
                   type="submit"
                   className="shadow-lg hover:opacity-90 transition-opacity cursor-pointer px-4 py-2 rounded-md"
-                  style={{ border: '2px solid #FF5F15', backgroundColor: 'transparent', color: '#fafafa' }}
+                  style={{
+                    border: '2px solid var(--accent-color)',
+                    backgroundColor: 'transparent',
+                    color: '#fafafa',
+                  }}
                 >
                   Send Message
                 </button>

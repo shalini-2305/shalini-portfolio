@@ -20,7 +20,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="text-2xl font-bold" style={{ color: '#FF5F15' }}>
+          <div className="text-2xl font-bold" style={{ color: 'var(--accent-color)' }}>
             Shalini M
           </div>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
                 key={items.href}
                 href={items.href}
                 className="hover:opacity-80 transition-opacity duration-200 font-medium"
-                style={{ color: '#FF5F15' }}
+                style={{ color: 'var(--accent-color)' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {items.label}
@@ -42,7 +42,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             className="md:hidden hover:bg-white/10"
-            style={{ color: '#FF5F15' }}
+            style={{ color: 'var(--accent-color)' }}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -57,7 +57,7 @@ const Navbar = () => {
                 key={item.href}
                 href={item.href}
                 className="block py-2 transition-opacity duration-200 hover:opacity-80"
-                style={{ color: '#FF5F15' }}
+                style={{ color: 'var(--accent-color)' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}

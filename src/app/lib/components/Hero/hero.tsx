@@ -44,15 +44,12 @@ const Hero = () => {
 
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="flex flex-col items-center justify-center gap-4">
-          <h1
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 animate-fade-in-up delay-100"
-            style={{ color: '#FF5F15' }}
-          >
-            Hi, I'm <span style={{ color: '#FF5F15' }}>Shalini M</span>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 animate-fade-in-up delay-100" style={{ color: 'var(--accent-color)' }}>
+            Hi, I'm <span style={{ color: 'var(--accent-color)' }}>Shalini M</span>
           </h1>
           <p
             className="text-xl sm:text-2xl mb-6 animate-fade-in-up delay-200"
-            style={{ color: '#FF5F15' }}
+            style={{ color: 'var(--accent-color)' }}
           >
             Fullstack Developer at Ascodelabs
           </p>
@@ -65,16 +62,24 @@ const Hero = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-fade-in-up delay-400">
           <button
-            className="px-6 py-3 rounded-lg shadow-lg hover:opacity-90 transition-opacity flex items-center text-[#fafafa]"
-            style={{ border: '2px solid #FF5F15' }}
+            className="px-6 py-3 rounded-lg shadow-lg hover:opacity-90 transition-opacity flex items-center"
+            style={{
+              border: '2px solid var(--accent-color)',
+              backgroundColor: 'transparent',
+              color: '#fafafa'
+            }}
             onClick={() => scrollToSection('contact')}
           >
             <Mail className="mr-2 h-4 w-4" />
             Get In Touch
           </button>
           <button
-            className="px-6 py-3 rounded-lg bg-transparent hover:opacity-80 transition-opacity border flex items-center border-[#fafafa] text-[#fafafa]"
-            style={{ border: '2px solid #FF5F15' }}
+            className="px-6 py-3 rounded-lg bg-transparent hover:opacity-80 transition-opacity border flex items-center"
+            style={{
+              border: '2px solid var(--accent-color)',
+              backgroundColor: 'transparent',
+              color: '#fafafa'
+            }}
           >
             <Download className="mr-2 h-4 w-4" />
             Download Resume

@@ -47,7 +47,7 @@ const Section4 = () => {
         <div className="text-center mb-12">
           <h2
             className="text-3xl sm:text-4xl font-bold mb-4"
-            style={{ color: '#FF5F15' }}
+            style={{ color: 'var(--accent-color)' }}
           >
             Professional Experience
           </h2>
@@ -168,7 +168,7 @@ const Section4 = () => {
                         border: '1px solid rgba(255, 255, 255, 0.15)',
                       }}
                     >
-                      <div className="w-2 h-2 rounded-full mr-3 bg-[#fafafa]"></div>
+                      <div className="w-2 h-2 rounded-full mr-3" style={{ backgroundColor: 'var(--accent-color)' }}></div>
                       <span className="text-sm">{skill}</span>
                     </div>
                   ))}

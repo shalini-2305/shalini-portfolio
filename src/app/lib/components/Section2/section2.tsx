@@ -38,10 +38,7 @@ const Section2 = () => {
     >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2
-            className="text-3xl sm:text-4xl font-bold mb-4"
-            style={{ color: '#FF5F15' }}
-          >
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: 'var(--accent-color)' }}>
             Technical Skills
           </h2>
           <p className="text-lg max-w-2xl mx-auto text-[#fafafa] opacity-80">
@@ -56,15 +53,15 @@ const Section2 = () => {
               key={index}
               className="group border transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
               style={{
-                backgroundColor: 'rgba(255, 255, 255, 0.15)',
-                borderColor: 'rgba(255, 255, 255, 0.25)',
+                backgroundColor: 'transparent',
+                borderColor: 'var(--accent-color)',
                 backdropFilter: 'blur(10px)',
                 boxShadow: '0 0 0 0 transparent',
               }}
               onMouseEnter={(e) =>
                 (e.currentTarget.style.boxShadow =
-                  '0 0 20px rgba(255, 255, 255, 0.3)')
-              } // Adjusted hover shadow
+                  '0 0 20px rgba(255, 95, 21, 0.3)')
+              } // Adjusted hover shadow to match accent color
               onMouseLeave={(e) =>
                 (e.currentTarget.style.boxShadow = '0 0 0 0 transparent')
               }
@@ -72,7 +69,7 @@ const Section2 = () => {
               <div className="p-6">
                 <div className="flex items-center mb-4">
                   {category.icon}
-                  <h3 className="text-xl font-semibold ml-3 text-[#fafafa]">
+                  <h3 className="text-xl font-semibold ml-3" style={{ color: 'var(--accent-color)' }}>
                     {category.title}
                   </h3>
                 </div>
@@ -87,7 +84,7 @@ const Section2 = () => {
                       style={{
                         backgroundColor: 'transparent',
                         color: '#fafafa',
-                        border: '2px solid #FF5F15'
+                        borderColor: 'var(--accent-color)'
                       }}
                     >
                       {skill}

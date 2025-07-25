@@ -92,7 +92,7 @@ const Section3 = () => {
             <Globe className="h-8 w-8 mr-3" style={{ color: '#fafafa' }} />
             <h2
               className="text-3xl sm:text-4xl font-bold"
-              style={{ color: '#FF5F15' }}
+              style={{ color: 'var(--accent-color)' }}
             >
               My Works
             </h2>
@@ -138,7 +138,7 @@ const Section3 = () => {
                     className="px-3 py-1 rounded-full text-xs font-medium shadow-sm border whitespace-nowrap"
                     style={{
                       backgroundColor: 'transparent',
-                      borderColor: '#FF5F15',
+                      borderColor: 'var(--accent-color)',
                       color: '#fafafa',
                     }}
                   >
@@ -210,9 +210,9 @@ const Section3 = () => {
                     rel="noopener noreferrer"
                     className="flex-1 px-4 py-2 rounded-md shadow-lg hover:opacity-90 transition-opacity flex items-center justify-center no-underline"
                     style={{
-                      border: '2px solid #FF5F15',
+                      border: '2px solid var(--accent-color)',
                       backgroundColor: 'transparent',
-                      color: '#FF5F15',
+                      color: 'var(--accent-color)',
                     }}
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
@@ -225,11 +225,7 @@ const Section3 = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div
-            className="rounded-lg p-6 shadow-lg"
-            style={{ backgroundColor: '#311e25' }}
-            // border removed as requested, bg set to #311e25
-          >
+          <div className="rounded-lg p-6 shadow-lg bg-[rgba(255, 255, 255, 0.05)] border border-[rgba(255, 255, 255, 0.1)]">
             <h3 className="text-xl font-semibold mb-2 text-[#fafafa]">
               Ready to Build Your Next Project?
             </h3>
@@ -238,8 +234,8 @@ const Section3 = () => {
               web technologies.
             </p>
             <button
-              className="p-2 hover:opacity-80 transition-opacity bg-transparent border text-[#FF5F15]"
-              style={{ borderColor: '#FF5F15' }}
+              className="p-2 hover:opacity-80 transition-opacity bg-transparent border text-[#fafafa]"
+              style={{ borderColor: 'var(--accent-color)' }}
             >
               Get In Touch
             </button>

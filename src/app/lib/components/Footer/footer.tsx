@@ -8,10 +8,13 @@ const Footer = () => {
     >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center">
-          <p className="mb-2" style={{ color: '#FF5F15' }}>
+          <p className="mb-2" style={{ color: 'var(--accent-color)' }}>
             © 2025 Shalini M. All rights reserved.
           </p>
-          <p className="text-sm" style={{ color: '#FF5F15', opacity: 0.8 }}>
+          <p
+            className="text-sm"
+            style={{ color: 'var(--accent-color)', opacity: 0.8 }}
+          >
             Built with Next.js, React, and Tailwind CSS
           </p>
         </div>
