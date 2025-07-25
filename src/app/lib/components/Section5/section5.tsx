@@ -4,15 +4,25 @@ import { Mail, MapPin, Linkedin, Github } from "lucide-react"
 
 const Section5 = () => {
   return (
-    <div id="contact" className="py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: "#18181b" }}>
+    <div
+      id="contact"
+      className="py-16 px-4 sm:px-6 lg:px-8"
+      style={{ backgroundColor: '#3b2930' }}
+    >
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: "#fafafa" }}>
+          <h2
+            className="text-3xl sm:text-4xl font-bold mb-4"
+            style={{ color: '#FF5F15' }}
+          >
             Let's Work Together
           </h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: "#fafafa", opacity: 0.8 }}>
-            I'm always interested in new opportunities and exciting projects. Let's discuss how we can bring your ideas
-            to life.
+          <p
+            className="text-lg max-w-2xl mx-auto"
+            style={{ color: '#fafafa', opacity: 0.8 }}
+          >
+            I'm always interested in new opportunities and exciting projects.
+            Let's discuss how we can bring your ideas to life.
           </p>
         </div>
 
@@ -20,30 +30,38 @@ const Section5 = () => {
           <div
             className="group border shadow-lg"
             style={{
-              backgroundColor: "rgba(255, 255, 255, 0.15)",
-              borderColor: "rgba(255, 255, 255, 0.25)",
-              backdropFilter: "blur(10px)",
-              boxShadow: "0 0 0 0 transparent", // Initial shadow
+              backgroundColor: 'rgba(255, 255, 255, 0.15)',
+              borderColor: 'rgba(255, 255, 255, 0.25)',
+              backdropFilter: 'blur(10px)',
+              boxShadow: '0 0 0 0 transparent', // Initial shadow
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.boxShadow = "0 0 20px rgba(255, 255, 255, 0.3)")}
-            onMouseLeave={(e) => (e.currentTarget.style.boxShadow = "0 0 0 0 transparent")}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.boxShadow =
+                '0 0 20px rgba(255, 255, 255, 0.3)')
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.boxShadow = '0 0 0 0 transparent')
+            }
           >
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-6" style={{ color: "#fafafa" }}>
+              <h3
+                className="text-xl font-semibold mb-6"
+                style={{ color: '#fafafa' }}
+              >
                 Get In Touch
               </h3>
 
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <Mail className="h-5 w-5 mr-3" style={{ color: "#fafafa" }} />
+                  <Mail className="h-5 w-5 mr-3" style={{ color: '#fafafa' }} />
                   <div>
-                    <p className="font-medium" style={{ color: "#fafafa" }}>
+                    <p className="font-medium" style={{ color: '#fafafa' }}>
                       Email
                     </p>
                     <a
                       href="mailto:shalini@ascodelabs.com"
                       className="transition-opacity hover:opacity-80"
-                      style={{ color: "#fafafa", opacity: 0.8 }}
+                      style={{ color: '#fafafa', opacity: 0.8 }}
                     >
                       shalini@ascodelabs.com
                     </a>
@@ -51,25 +69,31 @@ const Section5 = () => {
                 </div>
 
                 <div className="flex items-center">
-                  <MapPin className="h-5 w-5 mr-3" style={{ color: "#fafafa" }} />
+                  <MapPin
+                    className="h-5 w-5 mr-3"
+                    style={{ color: '#fafafa' }}
+                  />
                   <div>
-                    <p className="font-medium" style={{ color: "#fafafa" }}>
+                    <p className="font-medium" style={{ color: '#fafafa' }}>
                       Location
                     </p>
-                    <p style={{ color: "#fafafa", opacity: 0.8 }}>Chennai</p>
+                    <p style={{ color: '#fafafa', opacity: 0.8 }}>Chennai</p>
                   </div>
                 </div>
 
                 <div className="flex items-center">
-                  <Linkedin className="h-5 w-5 mr-3" style={{ color: "#fafafa" }} />
+                  <Linkedin
+                    className="h-5 w-5 mr-3"
+                    style={{ color: '#fafafa' }}
+                  />
                   <div>
-                    <p className="font-medium" style={{ color: "#fafafa" }}>
+                    <p className="font-medium" style={{ color: '#fafafa' }}>
                       LinkedIn
                     </p>
                     <a
                       href="#"
                       className="transition-opacity hover:opacity-80"
-                      style={{ color: "#fafafa", opacity: 0.8 }}
+                      style={{ color: '#fafafa', opacity: 0.8 }}
                     >
                       Connect with me
                     </a>
@@ -77,15 +101,18 @@ const Section5 = () => {
                 </div>
 
                 <div className="flex items-center">
-                  <Github className="h-5 w-5 mr-3" style={{ color: "#fafafa" }} />
+                  <Github
+                    className="h-5 w-5 mr-3"
+                    style={{ color: '#fafafa' }}
+                  />
                   <div>
-                    <p className="font-medium" style={{ color: "#fafafa" }}>
+                    <p className="font-medium" style={{ color: '#fafafa' }}>
                       GitHub
                     </p>
                     <a
                       href="#"
                       className="transition-opacity hover:opacity-80"
-                      style={{ color: "#fafafa", opacity: 0.8 }}
+                      style={{ color: '#fafafa', opacity: 0.8 }}
                     >
                       View my repositories
                     </a>
@@ -98,13 +125,18 @@ const Section5 = () => {
           <div
             className="group border shadow-lg"
             style={{
-              backgroundColor: "rgba(255, 255, 255, 0.15)",
-              borderColor: "rgba(255, 255, 255, 0.25)",
-              backdropFilter: "blur(10px)",
-              boxShadow: "0 0 0 0 transparent", // Initial shadow
+              backgroundColor: 'rgba(255, 255, 255, 0.15)',
+              borderColor: 'rgba(255, 255, 255, 0.25)',
+              backdropFilter: 'blur(10px)',
+              boxShadow: '0 0 0 0 transparent', // Initial shadow
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.boxShadow = "0 0 20px rgba(255, 255, 255, 0.3)")}
-            onMouseLeave={(e) => (e.currentTarget.style.boxShadow = "0 0 0 0 transparent")}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.boxShadow =
+                '0 0 20px rgba(255, 255, 255, 0.3)')
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.boxShadow = '0 0 0 0 transparent')
+            }
           >
             <div className="p-6">
               <h3
@@ -119,7 +151,7 @@ const Section5 = () => {
                   <label
                     htmlFor="name"
                     className="block text-sm font-medium mb-1"
-                    style={{ color: "#fafafa", opacity: 0.8 }}
+                    style={{ color: '#fafafa', opacity: 0.8 }}
                   >
                     Name
                   </label>
@@ -129,9 +161,9 @@ const Section5 = () => {
                     name="name"
                     className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:border-transparent"
                     style={{
-                      borderColor: "rgba(255, 255, 255, 0.2)",
-                      backgroundColor: "rgba(255, 255, 255, 0.05)",
-                      color: "#fafafa",
+                      borderColor: 'rgba(255, 255, 255, 0.2)',
+                      backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                      color: '#fafafa',
                     }}
                     placeholder="Your name"
                   />
@@ -141,7 +173,7 @@ const Section5 = () => {
                   <label
                     htmlFor="email"
                     className="block text-sm font-medium mb-1"
-                    style={{ color: "#fafafa", opacity: 0.8 }}
+                    style={{ color: '#fafafa', opacity: 0.8 }}
                   >
                     Email
                   </label>
@@ -151,9 +183,9 @@ const Section5 = () => {
                     name="email"
                     className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:border-transparent"
                     style={{
-                      borderColor: "rgba(255, 255, 255, 0.2)",
-                      backgroundColor: "rgba(255, 255, 255, 0.05)",
-                      color: "#fafafa",
+                      borderColor: 'rgba(255, 255, 255, 0.2)',
+                      backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                      color: '#fafafa',
                     }}
                     placeholder="your.email@example.com"
                   />
@@ -163,7 +195,7 @@ const Section5 = () => {
                   <label
                     htmlFor="message"
                     className="block text-sm font-medium mb-1"
-                    style={{ color: "#fafafa", opacity: 0.8 }}
+                    style={{ color: '#fafafa', opacity: 0.8 }}
                   >
                     Message
                   </label>
@@ -173,9 +205,9 @@ const Section5 = () => {
                     rows={4}
                     className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:border-transparent"
                     style={{
-                      borderColor: "rgba(255, 255, 255, 0.2)",
-                      backgroundColor: "rgba(255, 255, 255, 0.05)",
-                      color: "#fafafa",
+                      borderColor: 'rgba(255, 255, 255, 0.2)',
+                      backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                      color: '#fafafa',
                     }}
                     placeholder="Tell me about your project..."
                   ></textarea>
@@ -184,7 +216,7 @@ const Section5 = () => {
                 <button
                   type="submit"
                   className="shadow-lg hover:opacity-90 transition-opacity cursor-pointer px-4 py-2 rounded-md"
-                  style={{ backgroundColor: "#fafafa", color: "#18181b" }}
+                  style={{ border: '2px solid #FF5F15', backgroundColor: 'transparent', color: '#fafafa' }}
                 >
                   Send Message
                 </button>

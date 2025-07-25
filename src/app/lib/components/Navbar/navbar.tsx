@@ -14,10 +14,15 @@ const Navbar = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className="fixed top-0 w-full border-b z-50 bg-[#18181b] border-[rgba(250, 250, 250, 0.1)]">
+    <header
+      className="fixed top-0 w-full border-b z-50 border-[rgba(250, 250, 250, 0.1)]"
+      style={{ backgroundColor: '#311e25' }}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="text-2xl font-bold text-[#fafafa]">Shalini M</div>
+          <div className="text-2xl font-bold" style={{ color: '#FF5F15' }}>
+            Shalini M
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
@@ -25,7 +30,8 @@ const Navbar = () => {
               <a
                 key={items.href}
                 href={items.href}
-                className="hover:opacity-80 transition-opacity duration-200 font-medium text-[#fafafa]"
+                className="hover:opacity-80 transition-opacity duration-200 font-medium"
+                style={{ color: '#FF5F15' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {items.label}
@@ -35,7 +41,8 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden hover:bg-white/10 text-[#fafafa]"
+            className="md:hidden hover:bg-white/10"
+            style={{ color: '#FF5F15' }}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -49,7 +56,8 @@ const Navbar = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="block py-2 transition-opacity duration-200 hover:opacity-80 text-[#fafafa]"
+                className="block py-2 transition-opacity duration-200 hover:opacity-80"
+                style={{ color: '#FF5F15' }}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}

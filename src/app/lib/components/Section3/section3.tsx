@@ -84,7 +84,7 @@ const Section3 = () => {
     <section
       id="works"
       className="py-16 px-4 sm:px-6 lg:px-8"
-      style={{ backgroundColor: '#18181b' }}
+      style={{ backgroundColor: '#3b2930' }}
     >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
@@ -92,7 +92,7 @@ const Section3 = () => {
             <Globe className="h-8 w-8 mr-3" style={{ color: '#fafafa' }} />
             <h2
               className="text-3xl sm:text-4xl font-bold"
-              style={{ color: '#fafafa' }}
+              style={{ color: '#FF5F15' }}
             >
               My Works
             </h2>
@@ -127,11 +127,21 @@ const Section3 = () => {
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center">
                     <Code className="h-6 w-6 mr-2 text-[#fafafa]" />
-                    <h3 className="text-lg sm:text-xl font-semibold mb-2" style={{ color: '#fafafa' }}>
+                    <h3
+                      className="text-lg sm:text-xl font-semibold mb-2"
+                      style={{ color: '#fafafa' }}
+                    >
                       {project.title}
                     </h3>
                   </div>
-                  <span className="px-3 py-1 rounded-full text-xs font-medium shadow-sm bg-[#fafafa] text-[#18181b] whitespace-nowrap">
+                  <span
+                    className="px-3 py-1 rounded-full text-xs font-medium shadow-sm border whitespace-nowrap"
+                    style={{
+                      backgroundColor: 'transparent',
+                      borderColor: '#FF5F15',
+                      color: '#fafafa',
+                    }}
+                  >
                     {project.status}
                   </span>
                 </div>
@@ -198,7 +208,12 @@ const Section3 = () => {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 px-4 py-2 rounded-md shadow-lg hover:opacity-90 transition-opacity flex items-center justify-center bg-[#fafafa] text-[#18181b] no-underline"
+                    className="flex-1 px-4 py-2 rounded-md shadow-lg hover:opacity-90 transition-opacity flex items-center justify-center no-underline"
+                    style={{
+                      border: '2px solid #FF5F15',
+                      backgroundColor: 'transparent',
+                      color: '#FF5F15',
+                    }}
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Visit Website
@@ -210,7 +225,11 @@ const Section3 = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div className="rounded-lg p-6 shadow-lg bg-[rgba(255, 255, 255, 0.05)] border border-[rgba(255, 255, 255, 0.1)]">
+          <div
+            className="rounded-lg p-6 shadow-lg"
+            style={{ backgroundColor: '#311e25' }}
+            // border removed as requested, bg set to #311e25
+          >
             <h3 className="text-xl font-semibold mb-2 text-[#fafafa]">
               Ready to Build Your Next Project?
             </h3>
@@ -218,7 +237,10 @@ const Section3 = () => {
               Let's discuss how I can help bring your vision to life with modern
               web technologies.
             </p>
-            <button className="hover:opacity-80 transition-opacity bg-transparent border border-[#fafafa] text-[#fafafa]">
+            <button
+              className="p-2 hover:opacity-80 transition-opacity bg-transparent border text-[#FF5F15]"
+              style={{ borderColor: '#FF5F15' }}
+            >
               Get In Touch
             </button>
           </div>
