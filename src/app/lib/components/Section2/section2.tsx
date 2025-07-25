@@ -31,14 +31,19 @@ const Section2 = () => {
   ];
 
   return (
-    <section id="skills" className="mt-18 py-14 px-4 sm:px-6 lg:px-8 bg-[#18181b]">
+    <section
+      id="skills"
+      className="mt-18 py-14 px-4 sm:px-6 lg:px-8"
+      style={{ backgroundColor: '#311e25' }}
+    >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-[#fafafa]">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: 'var(--accent-color)' }}>
             Technical Skills
           </h2>
           <p className="text-lg max-w-2xl mx-auto text-[#fafafa] opacity-80">
-            A comprehensive toolkit for building modern web applications from frontend to backend
+            A comprehensive toolkit for building modern web applications from
+            frontend to backend
           </p>
         </div>
 
@@ -48,18 +53,23 @@ const Section2 = () => {
               key={index}
               className="group border transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
               style={{
-                backgroundColor: "rgba(255, 255, 255, 0.15)",
-                borderColor: "rgba(255, 255, 255, 0.25)",
-                backdropFilter: "blur(10px)",
-                boxShadow: "0 0 0 0 transparent",
+                backgroundColor: 'transparent',
+                borderColor: 'var(--accent-color)',
+                backdropFilter: 'blur(10px)',
+                boxShadow: '0 0 0 0 transparent',
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.boxShadow = "0 0 20px rgba(255, 255, 255, 0.3)")} // Adjusted hover shadow
-              onMouseLeave={(e) => (e.currentTarget.style.boxShadow = "0 0 0 0 transparent")}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.boxShadow =
+                  '0 0 20px rgba(255, 95, 21, 0.3)')
+              } // Adjusted hover shadow to match accent color
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.boxShadow = '0 0 0 0 transparent')
+              }
             >
               <div className="p-6">
                 <div className="flex items-center mb-4">
                   {category.icon}
-                  <h3 className="text-xl font-semibold ml-3 text-[#fafafa]">
+                  <h3 className="text-xl font-semibold ml-3" style={{ color: 'var(--accent-color)' }}>
                     {category.title}
                   </h3>
                 </div>
@@ -70,7 +80,12 @@ const Section2 = () => {
                   {category.skills.map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
-                      className="px-3 py-1 rounded-full text-sm font-medium bg-[#fafafa] text-[#18181b]"
+                      className="px-3 py-1 rounded-full text-sm font-medium border"
+                      style={{
+                        backgroundColor: 'transparent',
+                        color: '#fafafa',
+                        borderColor: 'var(--accent-color)'
+                      }}
                     >
                       {skill}
                     </span>

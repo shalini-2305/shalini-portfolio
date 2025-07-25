@@ -26,31 +26,28 @@ const Section4 = () => {
   ];
 
   const additionalSkills = [
-    'Domain Management & DNS Configuration',
-    'Application Deployment & Hosting',
-    'Workflow Automation with n8n',
-    'Database Design & Optimization',
-    'API Development & Integration',
-    'Responsive Web Design',
     'Version Control with Git',
+    'Responsive Web Design',
+    'API Development & Integration',
+    'Application Deployment & Hosting',
+    'Domain Management & DNS Configuration',
     'Agile Development Methodologies',
-    'Proficient in Cloud',
+    'Workflow Automation with n8n',
+    'Proficient in AI',
     'Proficient in Cursor',
-    'Proficient in ChatGPT',
-    'Proficient in v0',
   ];
 
   return (
     <section
       id="experience"
       className="py-16 px-4 sm:px-6 lg:px-8"
-      style={{ backgroundColor: '#18181b' }}
+      style={{ backgroundColor: '#311e25' }}
     >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <h2
             className="text-3xl sm:text-4xl font-bold mb-4"
-            style={{ color: '#fafafa' }}
+            style={{ color: 'var(--accent-color)' }}
           >
             Professional Experience
           </h2>
@@ -160,7 +157,7 @@ const Section4 = () => {
                 >
                   Additional Expertise
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 gap-3">
                   {additionalSkills.map((skill, index) => (
                     <div
                       key={index}
@@ -171,7 +168,7 @@ const Section4 = () => {
                         border: '1px solid rgba(255, 255, 255, 0.15)',
                       }}
                     >
-                      <div className="w-2 h-2 rounded-full mr-3 bg-[#fafafa]"></div>
+                      <div className="w-2 h-2 rounded-full mr-3" style={{ backgroundColor: 'var(--accent-color)' }}></div>
                       <span className="text-sm">{skill}</span>
                     </div>
                   ))}
