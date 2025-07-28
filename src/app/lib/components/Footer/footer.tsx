@@ -2,11 +2,11 @@
 
 const Footer = () => {
   return (
-    <div
-      className="py-8 px-4 sm:px-6 lg:px-8"
-      style={{ backgroundColor: '#0c0000' }}
+    <footer
+      className="py-8 relative overflow-hidden"
+      style={{ backgroundColor: '#000000' }}
     >
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <p className="mb-2" style={{ color: 'var(--accent-color)' }}>
             © 2025 Shalini M. All rights reserved.
@@ -19,7 +19,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

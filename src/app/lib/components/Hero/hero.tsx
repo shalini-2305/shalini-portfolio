@@ -76,9 +76,9 @@ const Hero = () => {
           <button
             className="px-6 py-3 rounded-lg shadow-lg hover:opacity-90 transition-opacity flex items-center"
             style={{
-              border: '2px solid var(--accent-color)',
+              border: '1px solid #fafafa',
               backgroundColor: 'transparent',
-              color: 'var(--accent-color)',
+              color: '#fafafa',
             }}
             onClick={() => scrollToSection('contact')}
           >
@@ -96,34 +96,6 @@ const Hero = () => {
             <Download className="mr-2 h-4 w-4" />
             Download Resume
           </button>
-        </div>
-
-        <div className="flex justify-center space-x-6 animate-fade-in-up delay-500">
-          <a
-            href="https://github.com/your-username"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--accent-color)] transition-all duration-200 transform hover:scale-110 hover:opacity-80 no-underline"
-            aria-label="GitHub"
-          >
-            <Github size={24} />
-          </a>
-          <a
-            href="https://linkedin.com/in/your-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--accent-color)] transition-all duration-200 transform hover:scale-110 hover:opacity-80 no-underline"
-            aria-label="LinkedIn"
-          >
-            <Linkedin size={24} />
-          </a>
-          <a
-            href="mailto:your-email@example.com"
-            className="text-[var(--accent-color)] transition-all duration-200 transform hover:scale-110 hover:opacity-80 no-underline"
-            aria-label="Email"
-          >
-            <Mail size={24} />
-          </a>
         </div>
       </div>
     </div>
