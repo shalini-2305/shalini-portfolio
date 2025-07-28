@@ -1,6 +1,6 @@
 'use client';
 
-import { Download, Github, Linkedin, Mail } from 'lucide-react';
+import { Download, Mail } from 'lucide-react';
 
 const Hero = () => {
   // Smooth scroll function for buttons
@@ -40,7 +40,7 @@ const Hero = () => {
                 backgroundClip: 'text',
               }}
             >
-              Hi, I'm{' '}
+              Hi, I&apos;m{' '}
             </span>
             <span
               style={{

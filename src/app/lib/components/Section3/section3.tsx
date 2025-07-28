@@ -85,9 +85,9 @@ const Section3 = () => {
             </h2>
           </div>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: '#fafafa' }}>
-            Explore the websites and applications I've developed and deployed.
-            Each project represents a unique solution crafted with attention to
-            detail and modern web standards.
+            Explore the websites and applications I&apos;ve developed and
+            deployed. Each project represents a unique solution crafted with
+            attention to detail and modern web standards.
           </p>
         </div>
 
@@ -207,8 +207,8 @@ const Section3 = () => {
               Ready to Build Your Next Project?
             </h3>
             <p className="mb-4 text-[#fafafa] opacity-80">
-              Let's discuss how I can help bring your vision to life with modern
-              web technologies.
+              Let&apos;s discuss how I can help bring your vision to life with
+              modern web technologies.
             </p>
             <button
               className="p-2 rounded-md hover:opacity-80 transition-opacity bg-transparent border"
