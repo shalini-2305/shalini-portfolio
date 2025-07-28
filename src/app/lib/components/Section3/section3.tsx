@@ -67,13 +67,16 @@ const Section3 = () => {
   return (
     <section
       id="works"
-      className="py-16 px-4 sm:px-6 lg:px-8"
-      style={{ backgroundColor: '#0c0000' }}
+      className="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+      style={{ backgroundColor: '#000000' }}
     >
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
-            <Globe className="h-8 w-8 mr-3" style={{ color: 'var(--accent-color)' }} />
+            <Globe
+              className="h-8 w-8 mr-3"
+              style={{ color: 'var(--accent-color)' }}
+            />
             <h2
               className="text-3xl sm:text-4xl font-bold"
               style={{ color: 'var(--accent-color)' }}
@@ -81,34 +84,43 @@ const Section3 = () => {
               My Works
             </h2>
           </div>
-
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#fafafa' }}>
+            Explore the websites and applications I've developed and deployed.
+            Each project represents a unique solution crafted with attention to
+            detail and modern web standards.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group border transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
+              className="group border transition-all duration-300 hover:scale-[1.02] hover:shadow-lg rounded-2xl"
               style={{
-                backgroundColor: 'rgba(255, 255, 255, 0.15)',
-                borderColor: 'rgba(255, 255, 255, 0.25)',
-                backdropFilter: 'blur(10px)',
-                boxShadow: '0 0 0 0 transparent',
+                background: 'rgba(255, 255, 255, 0.1)',
+                borderColor: 'rgba(255, 255, 255, 0.2)',
+                backdropFilter: 'blur(20px)',
+                boxShadow:
+                  '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
               }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.boxShadow =
-                  '0 0 20px rgba(255, 255, 255, 0.3)')
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.boxShadow = '0 0 0 0 transparent')
-              }
+              onMouseEnter={(e) => {
+                e.currentTarget.style.boxShadow =
+                  '0 12px 40px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 95, 21, 0.2)';
+                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.boxShadow =
+                  '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)';
+                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+              }}
             >
               <div className="p-6">
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center">
                     <Code className="h-6 w-6 mr-2 text-[#fafafa]" />
                     <h3
-                      className="text-base sm:text-lg font-semibold mb-2"
+                      className="text-lg sm:text-xl font-semibold mb-2"
                       style={{ color: '#fafafa' }}
                     >
                       {project.title}
@@ -118,7 +130,7 @@ const Section3 = () => {
                     className="px-3 py-1 rounded-full text-xs font-medium shadow-sm border whitespace-nowrap"
                     style={{
                       backgroundColor: 'transparent',
-                      borderColor: 'var(--accent-color)',
+                      borderColor: 'rgba(255, 255, 255, 0.3)',
                       color: '#fafafa',
                     }}
                   >
@@ -199,7 +211,7 @@ const Section3 = () => {
               web technologies.
             </p>
             <button
-              className="p-2 hover:opacity-80 transition-opacity bg-transparent border"
+              className="p-2 rounded-md hover:opacity-80 transition-opacity bg-transparent border"
               style={{
                 borderColor: 'var(--accent-color)',
                 color: 'var(--accent-color)',
