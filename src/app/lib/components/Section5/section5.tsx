@@ -15,14 +15,14 @@ const Section5 = () => {
             className="text-3xl sm:text-4xl font-bold mb-4"
             style={{ color: 'var(--accent-color)' }}
           >
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p
             className="text-lg max-w-2xl mx-auto"
             style={{ color: '#fafafa', opacity: 0.8 }}
           >
-            I'm always interested in new opportunities and exciting projects.
-            Let's discuss how we can bring your ideas to life.
+            I&apos;m always interested in new opportunities and exciting
+            projects. Let&apos;s discuss how we can bring your ideas to life.
           </p>
         </div>
 
@@ -33,15 +33,18 @@ const Section5 = () => {
               background: 'rgba(255, 255, 255, 0.1)',
               borderColor: 'rgba(255, 255, 255, 0.2)',
               backdropFilter: 'blur(20px)',
-              boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
+              boxShadow:
+                '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
               border: '1px solid rgba(255, 255, 255, 0.2)',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = '0 12px 40px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 95, 21, 0.1)';
+              e.currentTarget.style.boxShadow =
+                '0 12px 40px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 95, 21, 0.1)';
               e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)';
+              e.currentTarget.style.boxShadow =
+                '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)';
               e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
             }}
           >
@@ -130,15 +133,18 @@ const Section5 = () => {
               background: 'rgba(255, 255, 255, 0.1)',
               borderColor: 'rgba(255, 255, 255, 0.2)',
               backdropFilter: 'blur(20px)',
-              boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
+              boxShadow:
+                '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
               border: '1px solid rgba(255, 255, 255, 0.2)',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = '0 12px 40px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 95, 21, 0.1)';
+              e.currentTarget.style.boxShadow =
+                '0 12px 40px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 95, 21, 0.1)';
               e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)';
+              e.currentTarget.style.boxShadow =
+                '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)';
               e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
             }}
           >

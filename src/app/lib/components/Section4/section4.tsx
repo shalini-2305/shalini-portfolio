@@ -1,6 +1,6 @@
 'use client';
 
-import { Building, Calendar, MapPin } from 'lucide-react';
+import { Building, Calendar } from 'lucide-react';
 
 const Section4 = () => {
   const experience = [
@@ -12,6 +12,11 @@ const Section4 = () => {
         'Built complete web applications using React, Next.js, and Node.js, serving clients across diverse industries.',
         'Collaborated with cross-functional teams to deliver scalable solutions, improving client satisfaction rates by 40%.',
         'Implemented responsive designs and optimized performance, achieving 90+ PageSpeed scores consistently.',
+      ],
+      achievements: [
+        'Successfully deployed multiple production applications.',
+        'Improved application performance and user experience.',
+        'Streamlined deployment processes through automation.',
       ],
     },
   ];
@@ -123,7 +128,7 @@ const Section4 = () => {
                       className="list-disc list-inside space-y-1 text-sm"
                       style={{ color: '#fafafa', opacity: 0.8 }}
                     >
-                      {/* Achievements removed as per new_code */}
+
                     </ul>
                   </div>
                 </div>
