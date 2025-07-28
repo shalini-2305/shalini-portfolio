@@ -1,13 +1,13 @@
-"use client"
+'use client';
 
-import { Mail, MapPin, Linkedin, Github } from "lucide-react"
+import { Mail, MapPin, Linkedin, Github } from 'lucide-react';
 
 const Section5 = () => {
   return (
     <div
       id="contact"
       className="py-16 px-4 sm:px-6 lg:px-8"
-      style={{ backgroundColor: '#3b2930' }}
+      style={{ backgroundColor: '#0c0000' }}
     >
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
@@ -17,13 +17,6 @@ const Section5 = () => {
           >
             Let's Work Together
           </h2>
-          <p
-            className="text-lg max-w-2xl mx-auto"
-            style={{ color: '#fafafa', opacity: 0.8 }}
-          >
-            I'm always interested in new opportunities and exciting projects.
-            Let's discuss how we can bring your ideas to life.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -63,7 +56,7 @@ const Section5 = () => {
                       className="transition-opacity hover:opacity-80"
                       style={{ color: '#fafafa', opacity: 0.8 }}
                     >
-                      shalini@ascodelabs.com
+                      shalini.munusami23@gmail.com
                     </a>
                   </div>
                 </div>
@@ -95,7 +88,7 @@ const Section5 = () => {
                       className="transition-opacity hover:opacity-80"
                       style={{ color: '#fafafa', opacity: 0.8 }}
                     >
-                      Connect with me
+                      https://www.linkedin.com/in/shalini-munusami/
                     </a>
                   </div>
                 </div>
@@ -114,7 +107,7 @@ const Section5 = () => {
                       className="transition-opacity hover:opacity-80"
                       style={{ color: '#fafafa', opacity: 0.8 }}
                     >
-                      View my repositories
+                      https://github.com/shalini-2305
                     </a>
                   </div>
                 </div>
@@ -219,7 +212,7 @@ const Section5 = () => {
                   style={{
                     border: '2px solid var(--accent-color)',
                     backgroundColor: 'transparent',
-                    color: '#fafafa',
+                    color: 'var(--accent-color)',
                   }}
                 >
                   Send Message

@@ -12,12 +12,8 @@ const Section3 = () => {
       category: 'Corporate Website',
       technologies: ['Next.js', 'React', 'Tailwind CSS', 'JavaScript'],
       status: 'Developed & Deployed',
-      whatIdid:
-        'Designed and developed the entire frontend, integrated backend services, and managed content.',
-      howIdid:
-        'Built with Next.js for SSR, React for UI, and Tailwind CSS for responsive design.',
-      impact:
-        'Improved brand visibility and client engagement, enhancing user experience.',
+      summary:
+        'Designed and developed the entire frontend with Next.js for SSR, React for UI, and Tailwind CSS for responsive design. The project improved brand visibility and client engagement, enhancing overall user experience.',
     },
     {
       title: 'Stamp Management System',
@@ -36,12 +32,8 @@ const Section3 = () => {
         'Supabase',
       ],
       status: 'Developed & Deployed',
-      whatIdid:
-        'Developed full stack: auth, database, APIs, frontend. Integrated Stripe and AI features.',
-      howIdid:
-        'React for UI, Node.js/SQL for backend, Supabase for DB/auth, Stripe for payments, AI for insights.',
-      impact:
-        'Automated inventory/sales, reduced errors, expanded market reach, enhanced user insights.',
+      summary:
+        'Built a full-stack solution with React for UI, Node.js/SQL backend, Supabase for authentication, and integrated Stripe payments with AI features. Automated inventory management and sales processes, reducing errors while expanding market reach and enhancing user insights.',
     },
     {
       title: 'Realty Sample Website',
@@ -51,12 +43,8 @@ const Section3 = () => {
       category: 'Sample Website',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Framework'],
       status: 'Developed & Deployed',
-      whatIdid:
-        'Created a responsive, visually appealing demo site focusing on clean code and navigation.',
-      howIdid:
-        'Developed using pure HTML5, CSS3, and vanilla JavaScript with a mobile-first approach.',
-      impact:
-        'Served as a strong demonstration of web development capabilities for potential clients.',
+      summary:
+        'Created a responsive, visually appealing demo site using pure HTML5, CSS3, and vanilla JavaScript with a mobile-first approach. Served as a strong demonstration of web development capabilities for potential clients with clean code and intuitive navigation.',
     },
     {
       title: 'Billsheet Management',
@@ -71,12 +59,8 @@ const Section3 = () => {
         'Automation',
       ],
       status: 'Deployed & Running',
-      whatIdid:
-        'Implemented core logic for invoice generation, calculations, and data reporting.',
-      howIdid:
-        'Backend in Python for data processing/automation, integrated with DB and PDF libraries.',
-      impact:
-        'Streamlined billing, reduced manual effort by 70%, improved financial accuracy.',
+      summary:
+        'Implemented core logic for invoice generation, calculations, and data reporting using Python for backend processing and automation. Streamlined billing processes, reduced manual effort by 70%, and significantly improved financial accuracy.',
     },
   ];
 
@@ -84,12 +68,12 @@ const Section3 = () => {
     <section
       id="works"
       className="py-16 px-4 sm:px-6 lg:px-8"
-      style={{ backgroundColor: '#3b2930' }}
+      style={{ backgroundColor: '#0c0000' }}
     >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
-            <Globe className="h-8 w-8 mr-3" style={{ color: '#fafafa' }} />
+            <Globe className="h-8 w-8 mr-3" style={{ color: 'var(--accent-color)' }} />
             <h2
               className="text-3xl sm:text-4xl font-bold"
               style={{ color: 'var(--accent-color)' }}
@@ -97,11 +81,7 @@ const Section3 = () => {
               My Works
             </h2>
           </div>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#fafafa' }}>
-            Explore the websites and applications I've developed and deployed.
-            Each project represents a unique solution crafted with attention to
-            detail and modern web standards.
-          </p>
+
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -113,7 +93,7 @@ const Section3 = () => {
                 backgroundColor: 'rgba(255, 255, 255, 0.15)',
                 borderColor: 'rgba(255, 255, 255, 0.25)',
                 backdropFilter: 'blur(10px)',
-                boxShadow: '0 0 0 0 transparent', // Initial shadow
+                boxShadow: '0 0 0 0 transparent',
               }}
               onMouseEnter={(e) =>
                 (e.currentTarget.style.boxShadow =
@@ -128,7 +108,7 @@ const Section3 = () => {
                   <div className="flex items-center">
                     <Code className="h-6 w-6 mr-2 text-[#fafafa]" />
                     <h3
-                      className="text-lg sm:text-xl font-semibold mb-2"
+                      className="text-base sm:text-lg font-semibold mb-2"
                       style={{ color: '#fafafa' }}
                     >
                       {project.title}
@@ -163,22 +143,16 @@ const Section3 = () => {
                 </p>
 
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold mb-2 text-[#fafafa]">
-                    What I did:
-                  </h4>
-                  <p className="text-sm line-clamp-2 text-[#fafafa] opacity-70">
-                    {project.whatIdid}
+                  <p className="text-sm leading-relaxed text-[#fafafa] opacity-80">
+                    {project.summary}
                   </p>
                 </div>
 
                 <div className="mb-4">
                   <h4 className="text-sm font-semibold mb-2 text-[#fafafa]">
-                    How I did / Techstack:
+                    Technologies:
                   </h4>
-                  <p className="text-sm line-clamp-2 text-[#fafafa] opacity-70">
-                    {project.howIdid}
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-2">
+                  <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
@@ -192,15 +166,6 @@ const Section3 = () => {
                       </span>
                     ))}
                   </div>
-                </div>
-
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold mb-2 text-[#fafafa]">
-                    Impact:
-                  </h4>
-                  <p className="text-sm line-clamp-2 text-[#fafafa] opacity-70">
-                    {project.impact}
-                  </p>
                 </div>
 
                 <div className="flex gap-3 pt-4 border-t border-[rgba(250, 250, 250, 0.1)]">
@@ -234,8 +199,11 @@ const Section3 = () => {
               web technologies.
             </p>
             <button
-              className="p-2 hover:opacity-80 transition-opacity bg-transparent border text-[#fafafa]"
-              style={{ borderColor: 'var(--accent-color)' }}
+              className="p-2 hover:opacity-80 transition-opacity bg-transparent border"
+              style={{
+                borderColor: 'var(--accent-color)',
+                color: 'var(--accent-color)',
+              }}
             >
               Get In Touch
             </button>

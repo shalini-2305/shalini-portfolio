@@ -16,11 +16,14 @@ const Navbar = () => {
   return (
     <header
       className="fixed top-0 w-full border-b z-50 border-[rgba(250, 250, 250, 0.1)]"
-      style={{ backgroundColor: '#311e25' }}
+      style={{ backgroundColor: '#0c0000' }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="text-2xl font-bold" style={{ color: 'var(--accent-color)' }}>
+          <div
+            className="text-2xl font-bold"
+            style={{ color: 'var(--accent-color)' }}
+          >
             Shalini M
           </div>
 

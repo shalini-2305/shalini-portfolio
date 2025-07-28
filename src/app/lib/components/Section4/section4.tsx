@@ -10,12 +10,9 @@ const Section4 = () => {
       period: 'Current Position',
       location: 'Chennai',
       responsibilities: [
-        'Develop and maintain full-stack web applications using React, Next.js, and Python.',
-        'Design and implement responsive user interfaces with Tailwind CSS.',
-        'Build and optimize backend APIs and database systems.',
-        'Manage domain setup, deployment, and DevOps processes.',
-        'Implement automation workflows using n8n for improved efficiency.',
-        'Collaborate with team members on project architecture and code reviews.',
+        'Develop and maintain full-stack web applications using React, Next.js, Python, and Tailwind CSS.',
+        'Build optimized backend APIs, database systems, and manage DevOps processes including deployment.',
+        'Implement automation workflows using n8n and collaborate on project architecture and code reviews.',
       ],
       achievements: [
         'Successfully deployed multiple production applications.',
@@ -27,7 +24,6 @@ const Section4 = () => {
 
   const additionalSkills = [
     'Version Control with Git',
-    'Responsive Web Design',
     'API Development & Integration',
     'Application Deployment & Hosting',
     'Domain Management & DNS Configuration',
@@ -41,7 +37,7 @@ const Section4 = () => {
     <section
       id="experience"
       className="py-16 px-4 sm:px-6 lg:px-8"
-      style={{ backgroundColor: '#311e25' }}
+      style={{ backgroundColor: '#0c0000' }}
     >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
@@ -51,12 +47,6 @@ const Section4 = () => {
           >
             Professional Experience
           </h2>
-          <p
-            className="text-lg max-w-2xl mx-auto"
-            style={{ color: '#fafafa', opacity: 0.8 }}
-          >
-            Building innovative solutions and contributing to impactful projects
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -168,7 +158,10 @@ const Section4 = () => {
                         border: '1px solid rgba(255, 255, 255, 0.15)',
                       }}
                     >
-                      <div className="w-2 h-2 rounded-full mr-3" style={{ backgroundColor: 'var(--accent-color)' }}></div>
+                      <div
+                        className="w-2 h-2 rounded-full mr-3"
+                        style={{ backgroundColor: 'var(--accent-color)' }}
+                      ></div>
                       <span className="text-sm">{skill}</span>
                     </div>
                   ))}

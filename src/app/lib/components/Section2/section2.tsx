@@ -1,32 +1,40 @@
-"use client"
+'use client';
 
-import { Code, Database, Globe, Cog } from "lucide-react";
+import { Code, Database, Globe, Cog } from 'lucide-react';
 
 const Section2 = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
-      icon: <Globe className="h-8 w-8" style={{ color: "#fafafa" }} />,
-      skills: ["React", "Next.js", "JavaScript", "HTML", "Tailwind CSS"],
-      description: "Building responsive and interactive user interfaces",
+      title: 'Frontend Development',
+      icon: <Globe className="h-8 w-8" style={{ color: 'var(--accent-color)' }} />,
+      skills: ['React', 'Next.js', 'JavaScript', 'HTML', 'Tailwind CSS'],
+      description: 'Building responsive and interactive user interfaces',
     },
     {
-      title: "Backend Development",
-      icon: <Code className="h-8 w-8" style={{ color: "#fafafa" }} />,
-      skills: ["Python", "Node.js", "API Development", "Server Architecture"],
-      description: "Creating robust server-side applications and APIs",
+      title: 'Backend Development',
+      icon: <Code className="h-8 w-8" style={{ color: 'var(--accent-color)' }} />,
+      skills: ['Python', 'Node.js', 'API Development', 'Server Architecture'],
+      description: 'Creating robust server-side applications and APIs',
     },
     {
-      title: "Database & Storage",
-      icon: <Database className="h-8 w-8" style={{ color: "#fafafa" }} />,
-      skills: ["SQL", "Supabase", "Database Design", "Data Management"],
-      description: "Designing and managing efficient database systems",
+      title: 'Database & Storage',
+      icon: <Database className="h-8 w-8" style={{ color: 'var(--accent-color)' }} />,
+      skills: ['SQL', 'Supabase', 'Database Design', 'Data Management'],
+      description: 'Designing and managing efficient database systems',
     },
     {
-      title: "DevOps & Automation",
-      icon: <Cog className="h-8 w-8" style={{ color: "#fafafa" }} />,
-      skills: ["n8n Automation", "Domain Management", "Cloudflare", "Deployment", "CI/CD", "Git", "GitHub"],
-      description: "Streamlining development and deployment processes",
+      title: 'DevOps & Automation',
+      icon: <Cog className="h-8 w-8" style={{ color: 'var(--accent-color)' }} />,
+      skills: [
+        'n8n Automation',
+        'Domain Management',
+        'Cloudflare',
+        'Deployment',
+        'CI/CD',
+        'Git',
+        'GitHub',
+      ],
+      description: 'Streamlining development and deployment processes',
     },
   ];
 
@@ -34,17 +42,16 @@ const Section2 = () => {
     <section
       id="skills"
       className="mt-18 py-14 px-4 sm:px-6 lg:px-8"
-      style={{ backgroundColor: '#311e25' }}
+      style={{ backgroundColor: '#0c0000' }}
     >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: 'var(--accent-color)' }}>
+          <h2
+            className="text-3xl sm:text-4xl font-bold mb-4"
+            style={{ color: 'var(--accent-color)' }}
+          >
             Technical Skills
           </h2>
-          <p className="text-lg max-w-2xl mx-auto text-[#fafafa] opacity-80">
-            A comprehensive toolkit for building modern web applications from
-            frontend to backend
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -69,7 +76,10 @@ const Section2 = () => {
               <div className="p-6">
                 <div className="flex items-center mb-4">
                   {category.icon}
-                  <h3 className="text-xl font-semibold ml-3" style={{ color: 'var(--accent-color)' }}>
+                  <h3
+                    className="text-xl font-semibold ml-3"
+                    style={{ color: 'var(--accent-color)' }}
+                  >
                     {category.title}
                   </h3>
                 </div>
@@ -84,7 +94,7 @@ const Section2 = () => {
                       style={{
                         backgroundColor: 'transparent',
                         color: '#fafafa',
-                        borderColor: 'var(--accent-color)'
+                        borderColor: 'var(--accent-color)',
                       }}
                     >
                       {skill}

@@ -19,44 +19,56 @@ const Hero = () => {
       id="home"
       className="pt-40 pb-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden flex items-center justify-center min-h-[calc(120vh-80px)] text-[#18181b]"
       style={{
-        background: `
-          linear-gradient(135deg, #311e25 0%, #311e25 25%, #311e25 50%, #311e25 75%, #311e25 100%),
-          linear-gradient(45deg, #311e25 0%, #311e25 20%, #311e25 40%, #311e25 60%, #311e25 80%, #311e25 100%),
-          linear-gradient(-45deg, #311e25 0%, #311e25 25%, #311e25 50%, #311e25 75%, #311e25 100%)
-        `,
-        backgroundSize: '100% 100%, 400px 400px, 400px 400px',
-        backgroundPosition: '0 0, 0 0, 200px 200px',
+        backgroundImage: `url('/assert/hero-image.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
       }}
     >
-      {/* Geometric overlay pattern for distinct boxes */}
-      <div
-        className="absolute inset-0 opacity-60"
-        style={{
-          background: `
-            linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.15) 35%, rgba(255,255,255,0.15) 65%, transparent 70%),
-            linear-gradient(-45deg, transparent 30%, rgba(255,255,255,0.12) 35%, rgba(255,255,255,0.12) 65%, transparent 70%),
-            linear-gradient(90deg, transparent 40%, rgba(255,255,255,0.08) 45%, rgba(255,255,255,0.08) 55%, transparent 60%)
-          `,
-          backgroundSize: '600px 600px, 500px 500px, 800px 800px',
-          backgroundPosition: '0 0, 300px 300px, 150px 150px',
-        }}
-      />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="flex flex-col items-center justify-center gap-4">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 animate-fade-in-up delay-100" style={{ color: 'var(--accent-color)' }}>
-            Hi, I'm <span style={{ color: 'var(--accent-color)' }}>Shalini M</span>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 animate-fade-in-up delay-100">
+            <span
+              style={{
+                backgroundImage:
+                  'linear-gradient(to bottom, #f8b849, #e5a943, #d19b3c, #be8d36, #ac7f30)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
+            >
+              Hi, I'm{' '}
+            </span>
+            <span
+              style={{
+                backgroundImage:
+                  'linear-gradient(to bottom, #f8b849, #e5a943, #d19b3c, #be8d36, #ac7f30)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
+            >
+              Shalini M
+            </span>
           </h1>
           <p
             className="text-xl sm:text-2xl mb-6 animate-fade-in-up delay-200"
-            style={{ color: 'var(--accent-color)' }}
+            style={{
+              backgroundImage:
+                'linear-gradient(to bottom, #f8b849, #e5a943, #d19b3c, #be8d36, #ac7f30)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}
           >
-            Fullstack Developer at Ascodelabs
+            Fullstack Developer
           </p>
-          <p className="text-lg max-w-3xl mx-auto mb-8 leading-relaxed opacity-90 animate-fade-in-up delay-300 text-[#fafafa]">
-            Passionate fullstack developer building scalable applications with
-            React, Next.js, and Python.I focus on exceptional user experiences
-            and robust backend solutions.
+          <p className="text-lg max-w-3xl text-center mx-auto mb-8 leading-relaxed opacity-90 animate-fade-in-up delay-300 text-[#fafafa]">
+            Passionate fullstack developer building scalable applications. I
+            focus on exceptional user experiences and robust backend solutions.
           </p>
         </div>
 
@@ -66,7 +78,7 @@ const Hero = () => {
             style={{
               border: '2px solid var(--accent-color)',
               backgroundColor: 'transparent',
-              color: '#fafafa'
+              color: 'var(--accent-color)',
             }}
             onClick={() => scrollToSection('contact')}
           >
@@ -78,7 +90,7 @@ const Hero = () => {
             style={{
               border: '2px solid var(--accent-color)',
               backgroundColor: 'transparent',
-              color: '#fafafa'
+              color: 'var(--accent-color)',
             }}
           >
             <Download className="mr-2 h-4 w-4" />
@@ -91,7 +103,7 @@ const Hero = () => {
             href="https://github.com/your-username"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#fafafa] transition-all duration-200 transform hover:scale-110 hover:opacity-80 no-underline"
+            className="text-[var(--accent-color)] transition-all duration-200 transform hover:scale-110 hover:opacity-80 no-underline"
             aria-label="GitHub"
           >
             <Github size={24} />
@@ -100,14 +112,14 @@ const Hero = () => {
             href="https://linkedin.com/in/your-profile"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#fafafa] transition-all duration-200 transform hover:scale-110 hover:opacity-80 no-underline"
+            className="text-[var(--accent-color)] transition-all duration-200 transform hover:scale-110 hover:opacity-80 no-underline"
             aria-label="LinkedIn"
           >
             <Linkedin size={24} />
           </a>
           <a
             href="mailto:your-email@example.com"
-            className="text-[#fafafa] transition-all duration-200 transform hover:scale-110 hover:opacity-80 no-underline"
+            className="text-[var(--accent-color)] transition-all duration-200 transform hover:scale-110 hover:opacity-80 no-underline"
             aria-label="Email"
           >
             <Mail size={24} />
