@@ -64,11 +64,11 @@ const Section5 = () => {
                       Email
                     </p>
                     <a
-                      href="mailto:shalini@ascodelabs.com"
+                      href="mailto:shalini.munusami23@gmail.com"
                       className="transition-opacity hover:opacity-80"
                       style={{ color: '#fafafa', opacity: 0.8 }}
                     >
-                      shalini@ascodelabs.com
+                      shalini.munusami23@gmail.com
                     </a>
                   </div>
                 </div>
