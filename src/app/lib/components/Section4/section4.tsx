@@ -22,12 +22,14 @@ const Section4 = () => {
   ];
 
   const additionalSkills = [
-    'API Integration',
-    'Database Design',
-    'Version Control (Git)',
-    'Responsive Design',
-    'Problem Solving',
-    'Team Collaboration',
+    'Version Control with Git',
+    'API Development & Integration',
+    'Application Deployment & Hosting',
+    'Domain Management & DNS Configuration',
+    'Agile Development Methodologies',
+    'Workflow Automation with n8n',
+    'Proficient in AI',
+    'Proficient in Cursor',
   ];
 
   return (
@@ -128,7 +130,9 @@ const Section4 = () => {
                       className="list-disc list-inside space-y-1 text-sm"
                       style={{ color: '#fafafa', opacity: 0.8 }}
                     >
-
+                      {exp.achievements.map((achievement, achievementIndex) => (
+                        <li key={achievementIndex}>{achievement}</li>
+                      ))}
                     </ul>
                   </div>
                 </div>
