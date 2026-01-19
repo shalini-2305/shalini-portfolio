@@ -15,7 +15,7 @@ const Footer = () => {
             className="text-sm"
             style={{ color: 'var(--accent-color)', opacity: 0.8 }}
           >
-            Built with Next.js, React, and Tailwind CSS
+            Built with Next.js, React and Tailwind CSS
           </p>
         </div>
       </div>

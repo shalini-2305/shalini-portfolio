@@ -26,9 +26,9 @@ const Section5 = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex justify-center">
           <div
-            className="group border shadow-lg rounded-2xl transition-all duration-300 hover:scale-[1.01]"
+            className="group border shadow-lg rounded-2xl transition-all duration-300 hover:scale-[1.01] w-full max-w-md"
             style={{
               background: 'rgba(255, 255, 255, 0.1)',
               borderColor: 'rgba(255, 255, 255, 0.2)',
@@ -64,11 +64,11 @@ const Section5 = () => {
                       Email
                     </p>
                     <a
-                      href="mailto:shalini.munusami23@gmail.com"
+                      href="mailto:shalini.munusami03@gmail.com"
                       className="transition-opacity hover:opacity-80"
                       style={{ color: '#fafafa', opacity: 0.8 }}
                     >
-                      shalini.munusami23@gmail.com
+                      shalini.munusami03@gmail.com
                     </a>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ const Section5 = () => {
             </div>
           </div>
 
-          <div
+          {/* <div
             className="group border shadow-lg rounded-2xl transition-all duration-300 hover:scale-[1.01]"
             style={{
               background: 'rgba(255, 255, 255, 0.1)',
@@ -236,7 +236,7 @@ const Section5 = () => {
                 </button>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
