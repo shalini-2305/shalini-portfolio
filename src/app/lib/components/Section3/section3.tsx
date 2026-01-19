@@ -19,7 +19,7 @@ const Section3 = () => {
       title: 'Stamp Management System',
       description:
         'Comprehensive digital stamp management platform with auth and inventory tracking.',
-      url: 'https://stamp.ascodelabs.com',
+      url: 'https://companystampmaker.com/',
       category: 'Web Application',
       technologies: [
         'React',
@@ -35,22 +35,22 @@ const Section3 = () => {
       summary:
         'Built a full-stack solution with React for UI, Node.js/SQL backend, Supabase for authentication, and integrated Stripe payments with AI features. Automated inventory management and sales processes, reducing errors while expanding market reach and enhancing user insights.',
     },
-    {
-      title: 'Realty Sample Website',
-      description:
-        'Professional real estate showcase demonstrating property listings and search.',
-      url: 'https://ascodelabs.com/sample/realty',
-      category: 'Sample Website',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Framework'],
-      status: 'Developed & Deployed',
-      summary:
-        'Created a responsive, visually appealing demo site using pure HTML5, CSS3, and vanilla JavaScript with a mobile-first approach. Served as a strong demonstration of web development capabilities for potential clients with clean code and intuitive navigation.',
-    },
+    // {
+    //   title: 'Realty Sample Website',
+    //   description:
+    //     'Professional real estate showcase demonstrating property listings and search.',
+    //   url: 'https://ascodelabs.com/sample/realty',
+    //   category: 'Sample Website',
+    //   technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Framework'],
+    //   status: 'Developed & Deployed',
+    //   summary:
+    //     'Created a responsive, visually appealing demo site using pure HTML5, CSS3, and vanilla JavaScript with a mobile-first approach. Served as a strong demonstration of web development capabilities for potential clients with clean code and intuitive navigation.',
+    // },
     {
       title: 'Billsheet Management',
       description:
         'Advanced billing and invoice management system with automation and reporting.',
-      url: 'https://billsheet.ascodelabs.com',
+      url: 'https://billsheet.com',
       category: 'Business Application',
       technologies: [
         'Python',
@@ -61,6 +61,28 @@ const Section3 = () => {
       status: 'Deployed & Running',
       summary:
         'Implemented core logic for invoice generation, calculations, and data reporting using Python for backend processing and automation. Streamlined billing processes, reduced manual effort by 70%, and significantly improved financial accuracy.',
+    },
+    {
+      title: 'HELIX AI',
+      description:
+        'Privacy-first browser extension AI assistant with multi-model support and context-aware intelligence.',
+      url: 'https://helix-ai.ascodelabs.com',
+      category: 'AI Browser Extension',
+      technologies: [
+        'React',
+        'TypeScript',
+        'Chrome Extension API',
+        'WebExtensions API',
+        'OpenAI API',
+        'Google Gemini API',
+        'AI/LLM Integration',
+        'Context Parsing',
+      ],
+      status: 'Developed & Deployed',
+      summary:
+        'Privacy-first browser extension AI assistant with multi-model support (Chrome AI, ChatGPT, Gemini). ' +
+        'Four specialized UI interfaces with automatic context-aware page understanding. ' +
+        'Zero-logging architecture with local inference, integrating AI directly into browser workflows.',
     },
   ];
 
