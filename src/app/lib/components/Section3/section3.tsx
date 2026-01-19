@@ -84,7 +84,7 @@ const Section3 = () => {
               My Works
             </h2>
           </div>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#fafafa' }}>
+          <p className="text-lg mx-auto" style={{ color: '#fafafa' }}>
             Explore the websites and applications I&apos;ve developed and
             deployed. Each project represents a unique solution crafted with
             attention to detail and modern web standards.

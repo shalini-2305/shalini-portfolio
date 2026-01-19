@@ -1,47 +1,69 @@
 'use client';
 
-import { Code, Database, Globe, Cog } from 'lucide-react';
+import { Code, Database, Globe, Cog, Wrench } from 'lucide-react';
 
 const Section2 = () => {
   const skillCategories = [
     {
       title: 'Frontend Development',
       icon: <Globe className="h-8 w-8" style={{ color: '#fafafa' }} />,
-      skills: ['React', 'Next.js', 'JavaScript', 'HTML', 'Tailwind CSS'],
+      skills: [
+        'JavaScript (ES6+)',
+        'React.js',
+        'Next.js',
+        'HTML5',
+        'CSS3',
+        'Cross-Browser Compatibility',
+        'NextAuth',
+        'OAuth',
+      ],
       description: 'Building responsive and interactive user interfaces',
     },
     {
       title: 'Backend Development',
       icon: <Code className="h-8 w-8" style={{ color: '#fafafa' }} />,
-      skills: ['Python', 'Node.js', 'API Development', 'Server Architecture'],
+      skills: ['Node.js', 'RESTful APIs', 'Supabase', 'Drizzle ORM'],
       description: 'Creating robust server-side applications and APIs',
     },
     {
-      title: 'Database & Storage',
+      title: 'Databases',
       icon: <Database className="h-8 w-8" style={{ color: '#fafafa' }} />,
-      skills: ['SQL', 'Supabase', 'Database Design', 'Data Management'],
+      skills: ['MySQL', 'PostgreSQL'],
       description: 'Designing and managing efficient database systems',
     },
     {
-      title: 'DevOps & Automation',
+      title: 'DevOps & Cloud',
       icon: <Cog className="h-8 w-8" style={{ color: '#fafafa' }} />,
       skills: [
-        'n8n Automation',
-        'Domain Management',
+        'Google Cloud Platform (GCP)',
         'Cloudflare',
-        'Deployment',
-        'CI/CD',
-        'Git',
-        'GitHub',
+        'Coolify',
+        'CI/CD Pipelines',
+        'UNIX / Linux',
       ],
       description: 'Streamlining development and deployment processes',
+    },
+    {
+      title: 'Tools & Platforms',
+      icon: <Wrench className="h-8 w-8" style={{ color: '#fafafa' }} />,
+      skills: [
+        'Git',
+        'GitHub',
+        'Postman',
+        'Namecheap (Domain & DNS)',
+        'OpenAI Platform',
+        'n8n',
+        'Stripe',
+        'Polar',
+      ],
+      description: 'Essential tools and platforms for development workflow',
     },
   ];
 
   return (
     <section
       id="skills"
-      className="mt-18 py-14 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+      className="mt-18 pt-20 pb-14 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
       style={{ backgroundColor: '#000000' }}
     >
       <div className="container mx-auto max-w-6xl relative z-10">
@@ -58,7 +80,11 @@ const Section2 = () => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="group border transition-all duration-300 hover:scale-[1.02] hover:shadow-lg rounded-2xl"
+              className={`group border transition-all duration-300 hover:scale-[1.02] hover:shadow-lg rounded-2xl ${
+                index === skillCategories.length - 1
+                  ? 'md:col-span-2 md:max-w-2xl md:mx-auto'
+                  : ''
+              }`}
               style={{
                 background: 'rgba(255, 255, 255, 0.1)',
                 borderColor: 'rgba(255, 255, 255, 0.2)',

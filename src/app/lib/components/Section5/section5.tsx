@@ -82,7 +82,7 @@ const Section5 = () => {
                     <p className="font-medium" style={{ color: '#fafafa' }}>
                       Location
                     </p>
-                    <p style={{ color: '#fafafa', opacity: 0.8 }}>Chennai</p>
+                    <p style={{ color: '#fafafa', opacity: 0.8 }}>Chennai, Tamil Nadu, India</p>
                   </div>
                 </div>
 
