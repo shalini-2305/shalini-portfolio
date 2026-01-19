@@ -10,7 +10,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "npx update-browserslist-db@latest || true"
   },
   "dependencies": {
     "lucide-react": "^0.525.0",
