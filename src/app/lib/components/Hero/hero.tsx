@@ -14,6 +14,48 @@ const Hero = () => {
     }
   };
 
+  // Download resume function
+  const handleDownloadResume = async () => {
+    try {
+      // Source file in public folder
+      const sourceFileName = 'SHALINI-RESUME.pdf';
+      // Properly encode the filename for URL (handles spaces and parentheses)
+      const encodedFileName = encodeURIComponent(sourceFileName);
+      const filePath = `/${encodedFileName}`;
+      
+      // Desired download filename
+      const downloadFileName = 'Shalini_M_Resume.pdf';
+      
+      // Fetch the file
+      const response = await fetch(filePath);
+      
+      if (!response.ok) {
+        throw new Error('File not found');
+      }
+      
+      // Convert response to blob
+      const blob = await response.blob();
+      
+      // Create download link with blob URL
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = downloadFileName; // Set custom download filename
+      link.style.display = 'none';
+      document.body.appendChild(link);
+      link.click();
+      
+      // Cleanup after a short delay to ensure download starts
+      setTimeout(() => {
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      }, 100);
+    } catch (error) {
+      console.error('Error downloading resume:', error);
+      alert('Resume file not found. Please ensure the PDF file is in the public folder.');
+    }
+  };
+
   return (
     <div
       id="home"
@@ -92,6 +134,7 @@ const Hero = () => {
               backgroundColor: 'transparent',
               color: 'var(--accent-color)',
             }}
+            onClick={handleDownloadResume}
           >
             <Download className="mr-2 h-4 w-4" />
             Download Resume
