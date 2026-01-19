@@ -28,7 +28,7 @@ const Section5 = () => {
 
         <div className="flex justify-center">
           <div
-            className="group border shadow-lg rounded-2xl transition-all duration-300 hover:scale-[1.01] w-full max-w-md"
+            className="group border shadow-lg rounded-2xl transition-all duration-300 hover:scale-[1.01] w-full max-w-xl"
             style={{
               background: 'rgba(255, 255, 255, 0.1)',
               borderColor: 'rgba(255, 255, 255, 0.2)',

@@ -211,6 +211,12 @@ const Section3 = () => {
               modern web technologies.
             </p>
             <button
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               className="p-2 rounded-md hover:opacity-80 transition-opacity bg-transparent border"
               style={{
                 borderColor: 'var(--accent-color)',

@@ -7,16 +7,23 @@ const Section4 = () => {
     {
       title: 'Fullstack Developer',
       company: 'Ascodelabs',
-      duration: '2025 - Present',
+      duration: 'Aug 2024 - Present',
       responsibilities: [
-        'Built complete web applications using React, Next.js, and Node.js, serving clients across diverse industries.',
-        'Collaborated with cross-functional teams to deliver scalable solutions, improving client satisfaction rates by 40%.',
-        'Implemented responsive designs and optimized performance, achieving 90+ PageSpeed scores consistently.',
+        'Developed and maintained scalable full-stack web applications using React.js, Next.js, and Node.js.',
+        'Built and secured authentication systems using NextAuth and OAuth.',
+        'Designed and implemented RESTful APIs with clean architecture and efficient data handling using Drizzle ORM.',
+        'Integrated and managed PostgreSQL and MySQL databases for high-performance data storage.',
+        'Deployed, monitored, and maintained applications on Google Cloud Platform (GCP).',
+        'Configured Cloudflare for DNS management, CDN optimization, and application security.',
+        'Automated build and deployment workflows using CI/CD pipelines and Coolify.',
+        'Integrated Stripe and Polar for secure and reliable payment processing.',
+        'Created workflow automations using n8n to improve operational efficiency.',
+        'Implemented AI-powered features using the OpenAI Platform.',
+        'Collaborated with cross-functional teams using Git/GitHub with structured version control workflows.',
       ],
       achievements: [
-        'Successfully deployed multiple production applications.',
-        'Improved application performance and user experience.',
-        'Streamlined deployment processes through automation.',
+        'Winner – Google Chrome Built-in AI Challenge 2025 Hackathon, recognized for innovation and technical excellence.',
+        'Participated in AI Partner Catalyst: Accelerate Innovation Hackathon, contributing to AI-focused product development.',
       ],
     },
   ];
@@ -119,7 +126,7 @@ const Section4 = () => {
                     </ul>
                   </div>
 
-                  <div>
+                  <div className="mb-4">
                     <h4
                       className="font-medium mb-2"
                       style={{ color: '#fafafa' }}
@@ -133,6 +140,41 @@ const Section4 = () => {
                       {exp.achievements.map((achievement, achievementIndex) => (
                         <li key={achievementIndex}>{achievement}</li>
                       ))}
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4
+                      className="font-medium mb-2"
+                      style={{ color: '#fafafa' }}
+                    >
+                    Impact for the Company:
+                    </h4>
+                    <ul
+                      className="list-disc list-inside space-y-2 text-sm"
+                      style={{ color: '#fafafa', opacity: 0.8 }}
+                    >
+                      <li>
+                        Built and delivered end-to-end, production-grade web and
+                        AI applications using React, Next.js, Node.js, secure
+                        authentication, RESTful APIs, and scalable
+                        databases—strengthening product reliability, security,
+                        and user experience across multiple platforms.
+                      </li>
+                      <li>
+                        Improved performance, scalability, and operational
+                        efficiency by deploying applications on GCP, optimizing
+                        with Cloudflare, automating CI/CD and workflows using
+                        Coolify and n8n, and integrating payment systems (Stripe
+                        & Polar) to support business growth and monetization.
+                      </li>
+                      <li>
+                        Drove innovation and brand visibility by developing
+                        AI-powered solutions and a Chrome extension, contributing
+                        to real-world automation and analytics, and representing
+                        the company at hackathons—including winning the Google
+                        Chrome Built-in AI Challenge 2025.
+                      </li>
                     </ul>
                   </div>
                 </div>
