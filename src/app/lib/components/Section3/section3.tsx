@@ -5,18 +5,23 @@ import { ExternalLink, Globe, Code } from 'lucide-react';
 const Section3 = () => {
   const projects = [
     {
-      title: 'Ascodelabs Main Website',
+      title: 'ASCDELABS MAIN WEBSITE',
       description:
         'Complete development and deployment of the main company website.',
       url: 'https://ascodelabs.com',
       category: 'Corporate Website',
       technologies: ['Next.js', 'React', 'Tailwind CSS', 'JavaScript'],
       status: 'Developed & Deployed',
-      summary:
-        'Designed and developed the entire frontend with Next.js for SSR, React for UI, and Tailwind CSS for responsive design. The project improved brand visibility and client engagement, enhancing overall user experience.',
+      summary: [
+        'Designed and developed the entire frontend with Next.js for SSR',
+        'Built UI with React',
+        'Implemented responsive design with Tailwind CSS',
+        'Improved brand visibility and client engagement',
+        'Enhanced overall user experience',
+      ],
     },
     {
-      title: 'Stamp Management System',
+      title: 'STAMP E-COMMERCE',
       description:
         'Comprehensive digital stamp management platform with auth and inventory tracking.',
       url: 'https://companystampmaker.com/',
@@ -32,8 +37,16 @@ const Section3 = () => {
         'AI Integration',
       ],
       status: 'Developed & Deployed',
-      summary:
-        'Built a full-stack Next.js e-commerce solution with React and TypeScript for UI, Node.js/SQL backend, Supabase for authentication and database, and integrated Stripe payments with AI features. Automated inventory management and sales processes, reducing errors while expanding market reach and enhancing user insights.',
+      summary: [
+        'Built a full-stack Next.js e-commerce solution',
+        'Developed UI with React and TypeScript',
+        'Implemented Node.js/SQL backend',
+        'Integrated Supabase for authentication and database',
+        'Integrated Stripe payments with AI features',
+        'Automated inventory management and sales processes',
+        'Reduced errors while expanding market reach',
+        'Enhanced user insights',
+      ],
     },
     // {
     //   title: 'Realty Sample Website',
@@ -47,7 +60,7 @@ const Section3 = () => {
     //     'Created a responsive, visually appealing demo site using pure HTML5, CSS3, and vanilla JavaScript with a mobile-first approach. Served as a strong demonstration of web development capabilities for potential clients with clean code and intuitive navigation.',
     // },
     {
-      title: 'Billsheet Management',
+      title: 'BILLSHEET AI',
       description:
         'Advanced billing and invoice management system with automation and reporting.',
       url: 'https://billsheet.com',
@@ -66,8 +79,15 @@ const Section3 = () => {
         'CI/CD',
       ],
       status: 'Deployed & Running',
-      summary:
-        'Built a responsive web application with Next.js and React for uploading bill images and displaying results. Implemented AI-powered data extraction using OpenAI API and OCR modules for automated invoice processing. Deployed on Vercel/GCP with CI/CD workflows, streamlining billing processes and reducing manual effort by 70%.',
+      summary: [
+        'Built a responsive web application with Next.js and React',
+        'Implemented bill image upload and result display functionality',
+        'Integrated AI-powered data extraction using OpenAI API',
+        'Implemented OCR modules for automated invoice processing',
+        'Deployed on Vercel/GCP with CI/CD workflows',
+        'Streamlined billing processes',
+        'Reduced manual effort by 70%',
+      ],
     },
     {
       title: 'HELIX AI',
@@ -87,10 +107,14 @@ const Section3 = () => {
         'Context Parsing',
       ],
       status: 'Developed & Deployed',
-      summary:
-        'Privacy-first browser extension AI assistant with multi-model support (Chrome AI, ChatGPT, Gemini). ' +
-        'Four specialized UI interfaces with automatic context-aware page understanding. ' +
-        'Zero-logging architecture with local inference, integrating AI directly into browser workflows.',
+      summary: [
+        'Privacy-first browser extension AI assistant',
+        'Multi-model support (Chrome AI, ChatGPT, Gemini)',
+        'Four specialized UI interfaces',
+        'Automatic context-aware page understanding',
+        'Zero-logging architecture with local inference',
+        'Integrated AI directly into browser workflows',
+      ],
     },
   ];
 
@@ -125,7 +149,7 @@ const Section3 = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group border transition-all duration-300 hover:scale-[1.02] hover:shadow-lg rounded-2xl"
+              className="group border transition-all duration-300 hover:scale-[1.02] hover:shadow-lg rounded-2xl flex flex-col"
               style={{
                 background: 'rgba(255, 255, 255, 0.1)',
                 borderColor: 'rgba(255, 255, 255, 0.2)',
@@ -145,7 +169,7 @@ const Section3 = () => {
                 e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
               }}
             >
-              <div className="p-6">
+              <div className="p-6 flex flex-col h-full">
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center">
                     <Code className="h-6 w-6 mr-2 text-[#fafafa]" />
@@ -185,9 +209,11 @@ const Section3 = () => {
                 </p>
 
                 <div className="mb-4">
-                  <p className="text-sm leading-relaxed text-[#fafafa] opacity-80">
-                    {project.summary}
-                  </p>
+                  <ul className="text-sm leading-relaxed text-[#fafafa] opacity-80 list-disc list-inside space-y-1">
+                    {project.summary.map((point, pointIndex) => (
+                      <li key={pointIndex}>{point}</li>
+                    ))}
+                  </ul>
                 </div>
 
                 <div className="mb-4">
@@ -210,7 +236,7 @@ const Section3 = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-3 pt-4 border-t border-[rgba(250, 250, 250, 0.1)]">
+                <div className="flex gap-3 pt-4 mt-auto border-t border-[rgba(250, 250, 250, 0.1)]">
                   <a
                     href={project.url}
                     target="_blank"

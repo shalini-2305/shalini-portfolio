@@ -106,7 +106,7 @@ const Hero = () => {
               backgroundClip: 'text',
             }}
           >
-            Fullstack Developer
+            FULLSTACK DEVELOPER
           </p>
           <p className="text-lg max-w-3xl text-center mx-auto mb-8 leading-relaxed opacity-90 animate-fade-in-up delay-300 text-[#fafafa]">
             Passionate fullstack developer building scalable applications. I
