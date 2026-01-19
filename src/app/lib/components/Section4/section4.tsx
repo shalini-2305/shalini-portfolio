@@ -28,16 +28,6 @@ const Section4 = () => {
     },
   ];
 
-  const additionalSkills = [
-    'Version Control with Git',
-    'API Development & Integration',
-    'Application Deployment & Hosting',
-    'Domain Management & DNS Configuration',
-    'Agile Development Methodologies',
-    'Workflow Automation with n8n',
-    'Proficient in AI',
-    'Proficient in Cursor',
-  ];
 
   return (
     <section
@@ -55,8 +45,8 @@ const Section4 = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2">
+        <div className="flex justify-center">
+          <div className="w-full max-w-4xl">
             {experience.map((exp, index) => (
               <div
                 key={index}
@@ -180,58 +170,6 @@ const Section4 = () => {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div>
-            <div
-              className="border shadow-lg rounded-2xl transition-all duration-300 hover:scale-[1.01]"
-              style={{
-                background: 'rgba(255, 255, 255, 0.1)',
-                borderColor: 'rgba(255, 255, 255, 0.2)',
-                backdropFilter: 'blur(20px)',
-                boxShadow:
-                  '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow =
-                  '0 12px 40px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 95, 21, 0.1)';
-                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow =
-                  '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)';
-                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-              }}
-            >
-              <div className="p-6">
-                <h3
-                  className="text-lg font-semibold mb-4"
-                  style={{ color: '#fafafa' }}
-                >
-                  Additional Expertise
-                </h3>
-                <div className="grid grid-cols-1 gap-3">
-                  {additionalSkills.map((skill, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center p-3 rounded-lg transition-all duration-200 hover:scale-[1.03]"
-                      style={{
-                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                        color: '#fafafa',
-                        border: '1px solid rgba(255, 255, 255, 0.15)',
-                      }}
-                    >
-                      <div
-                        className="w-2 h-2 rounded-full mr-3"
-                        style={{ backgroundColor: 'var(--accent-color)' }}
-                      ></div>
-                      <span className="text-sm">{skill}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
